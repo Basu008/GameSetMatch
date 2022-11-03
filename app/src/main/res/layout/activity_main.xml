@@ -9,49 +9,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
+        android:padding="20dp"
         tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/textView"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/gilroy_extra_bold"
-            android:lineSpacingMultiplier="1.5"
-            android:text="@string/homepage_text"
-            android:textColor="@color/white"
-            android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/get_started_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="@string/get_started"
-            android:fontFamily="@font/gilroy_bold"
-            android:textColor="@color/black"
-            android:drawableEnd="@drawable/ic_get_started"
-            android:drawablePadding="10dp"
-            android:padding="20dp"
-            android:background="@drawable/main_btn_bg"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_extra_bold"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/homepage_text"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="-10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="-10dp"
-            android:background="@drawable/button_higlight_bg"
-            app:layout_constraintBottom_toBottomOf="@+id/get_started_btn"
-            app:layout_constraintEnd_toEndOf="@+id/get_started_btn"
-            app:layout_constraintStart_toStartOf="@+id/get_started_btn"
-            app:layout_constraintTop_toTopOf="@+id/get_started_btn" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/get_started_btn"
+                android:layout_marginTop="50dp"
+                android:drawableEnd="@drawable/ic_get_started"
+                android:drawablePadding="10dp"
+                android:text="@string/get_started"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                style="@style/ButtonsStyle" />
+
+            <View
+                app:layout_constraintBottom_toBottomOf="@+id/get_started_btn"
+                app:layout_constraintEnd_toEndOf="@+id/get_started_btn"
+                app:layout_constraintStart_toStartOf="@+id/get_started_btn"
+                app:layout_constraintTop_toTopOf="@+id/get_started_btn"
+                style="@style/HiglightStyle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -65,7 +62,6 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/gilroy_regular"
                 android:text="@string/sign_in_text"
                 android:textColor="@color/white"

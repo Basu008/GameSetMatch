@@ -6,7 +6,12 @@
     <string name="registration_btn">Register</string>
     <string name="sign_in_text">Already a user?</string>
     <string name="sign_in_btn">Sign in</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="on_boarding">Get\nOn\nBoard</string>
+    <string name="password">Password</string>
 
     <!-- Buttons text -->
     <string name="get_started">Get Started.</string>
+    <string name="done">Done</string>
 </resources>
