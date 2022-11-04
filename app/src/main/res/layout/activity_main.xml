@@ -46,7 +46,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/get_started_btn"
                 app:layout_constraintStart_toStartOf="@+id/get_started_btn"
                 app:layout_constraintTop_toTopOf="@+id/get_started_btn"
-                style="@style/HiglightStyle" />
+                style="@style/HighlightStyle" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -65,7 +65,7 @@
                 android:fontFamily="@font/gilroy_regular"
                 android:text="@string/sign_in_text"
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/sign_in_nav_btn"
@@ -75,7 +75,7 @@
                 android:text="@string/sign_in_btn"
                 android:layout_marginStart="3dp"
                 android:textColor="@color/button_color"
-                android:textSize="13sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
         </LinearLayout>

@@ -100,7 +100,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/password_et" />
 
             <View
-                style="@style/HiglightStyle"
+                style="@style/HighlightStyle"
                 app:layout_constraintBottom_toBottomOf="@id/done_btn"
                 app:layout_constraintEnd_toEndOf="@id/done_btn"
                 app:layout_constraintStart_toStartOf="@id/done_btn"
