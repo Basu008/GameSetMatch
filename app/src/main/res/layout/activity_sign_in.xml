@@ -7,9 +7,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
         android:background="@color/black"
-        tools:context=".signupsignin.SignUpActivity">
+        android:padding="20dp"
+        tools:context=".signupsignin.SignInActivity">
 
         <ImageView
             android:id="@+id/back_btn"
@@ -23,9 +23,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="100dp"
             android:fontFamily="@font/gilroy_bold"
-            android:text="@string/on_boarding"
+            android:text="@string/sign_in_message"
             android:textColor="@color/white"
             android:lineSpacingMultiplier="1.3"
             android:textSize="45sp"
@@ -35,8 +35,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,32 +54,15 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/username_tv"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:id="@+id/email_tv"
-                style="@style/InputTagTV"
-                android:layout_marginTop="16dp"
-                android:text="@string/email"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/username_et" />
-
-            <EditText
-                android:id="@+id/email_et"
-                style="@style/InputFieldStyle"
-                android:inputType="textEmailAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_tv" />
+                app:layout_constraintTop_toBottomOf="@+id/username_tv" />
 
             <TextView
                 android:id="@+id/password_tv"
                 style="@style/InputTagTV"
-                android:layout_marginTop="16dp"
                 android:text="@string/password"
+                android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_et" />
+                app:layout_constraintTop_toBottomOf="@+id/username_et" />
 
             <EditText
                 android:id="@+id/password_et"
@@ -91,23 +73,23 @@
                 app:layout_constraintTop_toBottomOf="@+id/password_tv" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/done_btn"
+                android:id="@+id/sign_in_btn"
                 style="@style/ButtonsStyle"
-                android:layout_marginTop="24dp"
-                android:text="@string/done"
+                android:text="@string/sign_in_btn"
+                android:layout_marginTop="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/password_et" />
 
             <View
                 style="@style/HiglightStyle"
-                app:layout_constraintBottom_toBottomOf="@id/done_btn"
-                app:layout_constraintEnd_toEndOf="@id/done_btn"
-                app:layout_constraintStart_toStartOf="@id/done_btn"
-                app:layout_constraintTop_toTopOf="@id/done_btn" />
-
+                app:layout_constraintBottom_toBottomOf="@id/sign_in_btn"
+                app:layout_constraintEnd_toEndOf="@id/sign_in_btn"
+                app:layout_constraintStart_toStartOf="@id/sign_in_btn"
+                app:layout_constraintTop_toTopOf="@id/sign_in_btn" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
