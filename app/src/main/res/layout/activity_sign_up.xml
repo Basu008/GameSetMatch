@@ -49,14 +49,33 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/username_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/15"
+                android:textColor="@color/light_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/username_et"
+                app:layout_constraintEnd_toEndOf="@+id/username_et"
+                app:layout_constraintTop_toTopOf="@+id/username_et" />
+
+
             <EditText
                 android:id="@+id/username_et"
                 style="@style/InputFieldStyle"
                 android:inputType="textPersonName"
+                android:maxLength="15"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/username_tv"
                 tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/username_error"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username_et"
+                style="@style/ErrorTextStyle"/>
+
 
             <TextView
                 android:id="@+id/email_tv"
@@ -64,7 +83,7 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/email"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/username_et" />
+                app:layout_constraintTop_toBottomOf="@+id/username_error" />
 
             <EditText
                 android:id="@+id/email_et"
@@ -75,12 +94,18 @@
                 app:layout_constraintTop_toBottomOf="@+id/email_tv" />
 
             <TextView
+                android:id="@+id/email_error"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_et"
+                style="@style/ErrorTextStyle"/>
+
+            <TextView
                 android:id="@+id/password_tv"
                 style="@style/InputTagTV"
                 android:layout_marginTop="16dp"
                 android:text="@string/password"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_et" />
+                app:layout_constraintTop_toBottomOf="@+id/email_error" />
 
             <EditText
                 android:id="@+id/password_et"
@@ -90,6 +115,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/password_tv" />
 
+            <TextView
+                android:id="@+id/password_error"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_et"
+                style="@style/ErrorTextStyle"/>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/done_btn"
                 style="@style/ButtonsStyle"
@@ -97,7 +128,7 @@
                 android:text="@string/done"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password_et" />
+                app:layout_constraintTop_toBottomOf="@+id/password_error" />
 
             <View
                 style="@style/HighlightStyle"

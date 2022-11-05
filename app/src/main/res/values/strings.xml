@@ -13,6 +13,9 @@
     <string name="sign_in_message">Let\'s\nGet\nGoing</string>
     <string name="password">Password</string>
 
+    <!-- Error text -->
+    <string name="incorrect_credentials">* Incorrect username or password.</string>
+
     <!-- Buttons text -->
     <string name="get_started">Get Started.</string>
     <string name="done">Done</string>

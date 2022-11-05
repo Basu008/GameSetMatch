@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_higlight_bg.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/ic_invalid.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/ic_valid.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/main_btn_bg.xml" value="0.2165" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.35293375651041664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32513732910156246" />
