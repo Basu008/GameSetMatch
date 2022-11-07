@@ -78,34 +78,12 @@
 
 
             <TextView
-                android:id="@+id/email_tv"
-                style="@style/InputTagTV"
-                android:layout_marginTop="16dp"
-                android:text="@string/email"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/username_error" />
-
-            <EditText
-                android:id="@+id/email_et"
-                style="@style/InputFieldStyle"
-                android:inputType="textEmailAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_tv" />
-
-            <TextView
-                android:id="@+id/email_error"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/email_et"
-                style="@style/ErrorTextStyle"/>
-
-            <TextView
                 android:id="@+id/password_tv"
                 style="@style/InputTagTV"
                 android:layout_marginTop="16dp"
                 android:text="@string/password"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/email_error" />
+                app:layout_constraintTop_toBottomOf="@+id/username_error" />
 
             <EditText
                 android:id="@+id/password_et"
@@ -121,6 +99,28 @@
                 app:layout_constraintTop_toBottomOf="@id/password_et"
                 style="@style/ErrorTextStyle"/>
 
+            <TextView
+                android:id="@+id/confirm_password_tv"
+                style="@style/InputTagTV"
+                android:layout_marginTop="16dp"
+                android:text="@string/confirm_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_error" />
+
+            <EditText
+                android:id="@+id/confirm_password_et"
+                style="@style/InputFieldStyle"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password_tv" />
+
+            <TextView
+                android:id="@+id/confirm_password_error"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirm_password_et"
+                style="@style/ErrorTextStyle"/>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/done_btn"
                 style="@style/ButtonsStyle"
@@ -128,7 +128,7 @@
                 android:text="@string/done"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password_error" />
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password_error" />
 
             <View
                 style="@style/HighlightStyle"
