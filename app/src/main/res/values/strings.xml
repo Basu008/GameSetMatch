@@ -15,6 +15,14 @@
 
     <!-- Error text -->
     <string name="incorrect_credentials">* Incorrect username or password.</string>
+    <string name="password_short">Password should be at least 8 characters long.</string>
+    <string name="weak_password">Weak Password! </string>
+    <string name="medium_password">Good Password! </string>
+    <string name="strong_password">Strong Password! </string>
+    <string name="empty_username">Username can not be empty</string>
+    <string name="username_taken">This username already exist.</string>
+    <string name="empty_password">Password can not be empty</string>
+    <string name="unmatched_password">The passwords don\'t match</string>
 
     <!-- Buttons text -->
     <string name="get_started">Get Started.</string>

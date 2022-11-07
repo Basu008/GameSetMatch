@@ -13,18 +13,9 @@ class RegistrationUtilTest{
             "123",
             "123"
         )
-        assertThat(result).isFalse()
+        assertThat(result).isEqualTo(Constants.USERNAME_EMPTY)
     }
 
-    @Test
-    fun `both empty password field returns false`(){
-        val result = RegistrationUtil.validateRegistrationInput(
-            "Basu",
-            "",
-            ""
-        )
-        assertThat(result).isFalse()
-    }
 
     @Test
     fun `empty password field returns false`(){
@@ -33,7 +24,7 @@ class RegistrationUtilTest{
             "",
             "123"
         )
-        assertThat(result).isFalse()
+        assertThat(result).isEqualTo(Constants.PASSWORD_EMPTY)
     }
 
     @Test
@@ -43,18 +34,9 @@ class RegistrationUtilTest{
             "123",
             ""
         )
-        assertThat(result).isFalse()
+        assertThat(result).isEqualTo(Constants.CONFIRMED_PASSWORD_EMPTY)
     }
 
-    @Test
-    fun `username is already taken returns false`(){
-        val result = RegistrationUtil.validateRegistrationInput(
-            "Basu",
-            "123",
-            "123"
-        )
-        assertThat(result).isFalse()
-    }
 
     @Test
     fun `valid username and correctly repeated and accepted password return true`(){
@@ -63,7 +45,7 @@ class RegistrationUtilTest{
             "123456789",
             "123456789"
         )
-        assertThat(result).isTrue()
+        assertThat(result).isEqualTo(Constants.VALID)
     }
 
     @Test
@@ -71,7 +53,7 @@ class RegistrationUtilTest{
         val result = RegistrationUtil.verifyPasswordStrength(
             "12345"
         )
-        assertThat(result).isEqualTo("Unacceptable")
+        assertThat(result).isEqualTo(Constants.PASSWORD_UNACCEPTABLE)
     }
 
 }

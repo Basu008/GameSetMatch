@@ -14,16 +14,18 @@ object RegistrationUtil {
         username: String,
         password: String,
         confirmedPassword: String
-    ): Boolean{
-        if(username.isEmpty() || password.isEmpty() || confirmedPassword.isEmpty())
-            return false
-        if(username == "Basu")
-            return false
+    ): String{
+        if(username.isEmpty())
+            return Constants.USERNAME_EMPTY
+        if(password.isEmpty())
+            return Constants.PASSWORD_EMPTY
+        if(confirmedPassword.isEmpty())
+            return Constants.CONFIRMED_PASSWORD_EMPTY
         if(password != confirmedPassword)
-            return false
-        if(verifyPasswordStrength(password) == "Unacceptable")
-            return false
-        return true
+            return Constants.PASSWORD_UNMATCHED
+        if(verifyPasswordStrength(password) == Constants.PASSWORD_UNACCEPTABLE)
+            return Constants.PASSWORD_UNACCEPTABLE
+        return Constants.VALID
     }
 
     fun verifyPasswordStrength(password: String): String{
@@ -31,7 +33,7 @@ object RegistrationUtil {
         var hasUpperCase = false
         var hasLowerCase = false
         var hasSpecialCharacters = false
-        var specialCharacters = listOf(
+        val specialCharacters = listOf(
             '!', '@', '#', '$', '%', '^', '&',
             '*', '(', ')', '-', '+'
         )
@@ -40,20 +42,20 @@ object RegistrationUtil {
                 if(char.isDigit())
                     hasNumber = true
                 if(char.isUpperCase())
-                    hasLowerCase = true
+                    hasUpperCase = true
                 if(char.isLowerCase())
                     hasLowerCase = true
                 if(char in specialCharacters)
                     hasSpecialCharacters = true
             }
             return if(hasLowerCase && hasUpperCase && hasSpecialCharacters && hasNumber)
-                "Strong"
+                Constants.STRONG
             else if(hasLowerCase && hasUpperCase && hasSpecialCharacters)
-                "Medium"
+                Constants.MEDIUM
             else
-                "Weak"
+                Constants.WEAK
         }
         else
-            return "Unacceptable"
+            return Constants.PASSWORD_UNACCEPTABLE
     }
 }
