@@ -7,6 +7,8 @@ import androidx.databinding.DataBindingUtil
 import com.example.gamesetmatch.databinding.ActivityMainBinding
 import com.example.gamesetmatch.signupsignin.SignInActivity
 import com.example.gamesetmatch.signupsignin.SignUpActivity
+import com.example.gamesetmatch.util.Constants
+import com.example.gamesetmatch.util.sharedPreference
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +17,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        if(sharedPreference.isSessionActive(this)){
+            val username = sharedPreference.getUsername(this)
+            Intent(this, HomePageActivity::class.java).also {
+                it.putExtra(Constants.USERNAME, username.trim())
+                startActivity(it)
+                finish()
+            }
+        }
 
         binding.getStartedBtn.setOnClickListener {
             Intent(this, SignUpActivity::class.java).also {

@@ -17,4 +17,6 @@ object Constants {
 
     //Keys
     const val USERNAME = "username"
+    const val USER_SESSION = "user session"
+    const val USER_SIGNED_IN = "user signed in"
 }

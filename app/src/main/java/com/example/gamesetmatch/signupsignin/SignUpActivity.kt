@@ -18,6 +18,7 @@ import com.example.gamesetmatch.data.User
 import com.example.gamesetmatch.databinding.ActivitySignUpBinding
 import com.example.gamesetmatch.util.Constants
 import com.example.gamesetmatch.util.RegistrationUtil
+import com.example.gamesetmatch.util.sharedPreference
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -32,7 +33,6 @@ class SignUpActivity : AppCompatActivity() {
         userViewModel = ViewModelProvider(this)[UserViewModel::class.java]
         userViewModel.allUsers.observe(this){
             allUsers = it
-            Log.d("ActiveUsers", allUsers.toString())
         }
         addTextChangedListener()
 
@@ -81,6 +81,7 @@ class SignUpActivity : AppCompatActivity() {
                     userViewModel.addUser(user)
 
                     Intent(this, HomePageActivity::class.java).also {
+                        sharedPreference.startSession(this, username.trim())
                         it.putExtra(Constants.USERNAME , username.trim())
                         startActivity(it)
                     }

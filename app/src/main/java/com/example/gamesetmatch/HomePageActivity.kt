@@ -16,6 +16,10 @@ class HomePageActivity : AppCompatActivity() {
 
         val username = intent.getStringExtra(Constants.USERNAME)
 
+        binding.backBtn.setOnClickListener {
+            finish()
+        }
+
         if(username != null){
             val welcomeMessage = "Hello, $username!"
             binding.welcomeMessageTv.text = welcomeMessage
