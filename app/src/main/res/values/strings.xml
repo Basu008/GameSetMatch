@@ -19,4 +19,5 @@
     <!-- Buttons text -->
     <string name="get_started">Get Started.</string>
     <string name="done">Done</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
