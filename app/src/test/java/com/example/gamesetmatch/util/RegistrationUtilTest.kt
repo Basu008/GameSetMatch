@@ -57,14 +57,21 @@ class RegistrationUtilTest{
     }
 
     @Test
-    fun `valid username and correctly repeated password return true`(){
+    fun `valid username and correctly repeated and accepted password return true`(){
         val result = RegistrationUtil.validateRegistrationInput(
-            "Basu",
-            "123",
-            "123"
+            "Basuu",
+            "123456789",
+            "123456789"
         )
         assertThat(result).isTrue()
     }
 
+    @Test
+    fun `password is less than 8 digit return false`(){
+        val result = RegistrationUtil.verifyPasswordStrength(
+            "12345"
+        )
+        assertThat(result).isEqualTo("Unacceptable")
+    }
 
 }
