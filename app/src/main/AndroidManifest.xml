@@ -14,16 +14,16 @@
         android:theme="@style/Theme.GameSetMatch"
         tools:targetApi="31">
         <activity
-            android:name=".HomePageActivity"
+            android:name=".ui.HomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".signupsignin.SignInActivity"
+            android:name="com.example.gamesetmatch.ui.signupsignin.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".signupsignin.SignUpActivity"
+            android:name="com.example.gamesetmatch.ui.signupsignin.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

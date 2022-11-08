@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:background="@color/black"
         android:padding="20dp"
-        tools:context=".HomePageActivity">
+        tools:context=".ui.HomePageActivity">
 
         <ImageView
             android:id="@+id/back_btn"

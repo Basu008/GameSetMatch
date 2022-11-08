@@ -1,4 +1,4 @@
-package com.example.gamesetmatch.signupsignin
+package com.example.gamesetmatch.ui.signupsignin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.example.gamesetmatch.HomePageActivity
+import com.example.gamesetmatch.ui.HomePageActivity
 import com.example.gamesetmatch.R
-import com.example.gamesetmatch.UserViewModel
+import com.example.gamesetmatch.viewmodel.UserViewModel
 import com.example.gamesetmatch.data.User
 import com.example.gamesetmatch.databinding.ActivitySignInBinding
 import com.example.gamesetmatch.util.Constants

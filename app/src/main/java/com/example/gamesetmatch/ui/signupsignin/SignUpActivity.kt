@@ -1,19 +1,17 @@
-package com.example.gamesetmatch.signupsignin
+package com.example.gamesetmatch.ui.signupsignin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.example.gamesetmatch.HomePageActivity
+import com.example.gamesetmatch.ui.HomePageActivity
 import com.example.gamesetmatch.R
-import com.example.gamesetmatch.UserViewModel
+import com.example.gamesetmatch.viewmodel.UserViewModel
 import com.example.gamesetmatch.data.User
 import com.example.gamesetmatch.databinding.ActivitySignUpBinding
 import com.example.gamesetmatch.util.Constants

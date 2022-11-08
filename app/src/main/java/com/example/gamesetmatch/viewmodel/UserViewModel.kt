@@ -1,4 +1,4 @@
-package com.example.gamesetmatch
+package com.example.gamesetmatch.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

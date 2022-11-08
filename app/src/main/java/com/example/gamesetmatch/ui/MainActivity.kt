@@ -1,12 +1,13 @@
-package com.example.gamesetmatch
+package com.example.gamesetmatch.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.example.gamesetmatch.R
 import com.example.gamesetmatch.databinding.ActivityMainBinding
-import com.example.gamesetmatch.signupsignin.SignInActivity
-import com.example.gamesetmatch.signupsignin.SignUpActivity
+import com.example.gamesetmatch.ui.signupsignin.SignInActivity
+import com.example.gamesetmatch.ui.signupsignin.SignUpActivity
 import com.example.gamesetmatch.util.Constants
 import com.example.gamesetmatch.util.sharedPreference
 
