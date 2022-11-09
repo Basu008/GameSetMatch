@@ -12,6 +12,7 @@
     <string name="on_boarding">Get\nOn\nBoard</string>
     <string name="sign_in_message">Let\'s\nGet\nGoing</string>
     <string name="password">Password</string>
+    <string name="player_grade">Player\'s Grade:</string>
 
     <!-- Error text -->
     <string name="incorrect_credentials">* Incorrect username or password.</string>
