@@ -43,7 +43,7 @@
                 android:id="@+id/add_players_btn"
                 style="@style/MainMenuButtonsStyle"
                 android:layout_width="0dp"
-                android:text="Add Players"
+                android:text="@string/add_players"
                 app:layout_constraintEnd_toEndOf="@+id/start_match_btn"
                 app:layout_constraintStart_toStartOf="@+id/start_match_btn"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -61,7 +61,7 @@
                 style="@style/MainMenuButtonsStyle"
                 android:layout_width="0dp"
                 android:layout_marginTop="30dp"
-                android:text="Make Teams"
+                android:text="@string/make_teams"
                 app:layout_constraintEnd_toEndOf="@+id/start_match_btn"
                 app:layout_constraintStart_toStartOf="@+id/start_match_btn"
                 app:layout_constraintTop_toBottomOf="@id/add_players_btn" />
@@ -78,7 +78,7 @@
                 style="@style/MainMenuButtonsStyle"
                 android:layout_width="0dp"
                 android:layout_marginTop="30dp"
-                android:text="Start a match"
+                android:text="@string/start_a_match"
                 app:layout_constraintEnd_toEndOf="@+id/match_history_btn"
                 app:layout_constraintStart_toStartOf="@+id/match_history_btn"
                 app:layout_constraintTop_toBottomOf="@id/make_teams_btn" />
@@ -94,7 +94,7 @@
                 android:id="@+id/match_history_btn"
                 style="@style/MainMenuButtonsStyle"
                 android:layout_marginTop="30dp"
-                android:text="Match history"
+                android:text="@string/match_history"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/start_match_btn" />

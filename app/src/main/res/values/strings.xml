@@ -8,6 +8,7 @@
     <string name="sign_in_text">Already a user?</string>
     <string name="sign_in_btn">Sign in</string>
     <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
     <string name="email">Email</string>
     <string name="on_boarding">Get\nOn\nBoard</string>
     <string name="sign_in_message">Let\'s\nGet\nGoing</string>
@@ -24,9 +25,13 @@
     <string name="username_taken">This username already exist.</string>
     <string name="empty_password">Password can not be empty</string>
     <string name="unmatched_password">The passwords don\'t match</string>
+    <string name="empty_players_list">No players found. Added players will be shown here.</string>
 
     <!-- Buttons text -->
     <string name="get_started">Get Started.</string>
     <string name="done">Done</string>
-    <string name="confirm_password">Confirm Password</string>
+    <string name="add_players">Add Players</string>
+    <string name="start_a_match">Start a match</string>
+    <string name="make_teams">Make Teams</string>
+    <string name="match_history">Match history</string>
 </resources>
