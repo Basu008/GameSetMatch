@@ -14,7 +14,7 @@
         android:theme="@style/Theme.GameSetMatch"
         tools:targetApi="31">
         <activity
-            android:name=".AddPlayerActivity"
+            android:name=".ui.addplayer.AddPlayerActivity"
             android:exported="false" />
         <activity
             android:name=".ui.HomePageActivity"
