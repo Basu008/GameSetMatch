@@ -48,7 +48,7 @@
         <item name="android:layout_marginTop">7dp</item>
         <item name="android:layout_marginEnd">-7dp</item>
         <item name="android:layout_marginBottom">-7dp</item>
-        <item name="android:background">@drawable/button_higlight_bg</item>
+        <item name="android:background">@drawable/bg_button_highlight</item>
     </style>
 
     <style name="ErrorTextStyle">
@@ -58,5 +58,36 @@
         <item name="android:textSize">15sp</item>
         <item name="android:visibility">gone</item>
         <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="GradesOptionStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="SportOptionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button_highlight</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NegativeButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button_highlight</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

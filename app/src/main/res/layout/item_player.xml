@@ -48,7 +48,7 @@
         tools:text="A"
         android:textSize="19sp"
         android:fontFamily="@font/gilroy_bold"
-        android:textColor="@color/yellow"
+        android:textColor="@color/green"
         app:layout_constraintBottom_toBottomOf="@+id/player_rating_heading"
         app:layout_constraintStart_toEndOf="@+id/player_rating_heading"
         app:layout_constraintTop_toTopOf="@+id/player_rating_heading" />

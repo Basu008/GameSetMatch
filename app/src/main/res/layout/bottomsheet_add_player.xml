@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_invalid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_player_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/add_players"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/player_name_tv"
+        style="@style/InputTagTV"
+        android:layout_marginTop="30dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_player_heading" />
+
+    <EditText
+        android:id="@+id/player_name_et"
+        style="@style/InputFieldStyle"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_name_tv" />
+
+    <TextView
+        android:id="@+id/select_sport_tv"
+        style="@style/InputTagTV"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_sport"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_name_et" />
+
+    <TextView
+        android:id="@+id/option_football"
+        style="@style/SportOptionStyle"
+        android:text="@string/football"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_sport_tv" />
+
+    <TextView
+        android:id="@+id/option_basketball"
+        style="@style/SportOptionStyle"
+        android:layout_marginStart="15dp"
+        android:text="@string/basketball"
+        app:layout_constraintStart_toEndOf="@id/option_football"
+        app:layout_constraintTop_toBottomOf="@+id/select_sport_tv" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/football_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_football">
+
+        <TextView
+            android:id="@+id/football_grade_tv"
+            style="@style/InputTagTV"
+            android:text="@string/football_grade"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/football_grade_a"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_a"
+            android:text="@string/option_a"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/football_grade_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/football_grade_b"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_b"
+            android:text="@string/option_b"
+            android:textColor="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/football_grade_a"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/football_grade_c"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_c"
+            android:text="@string/option_c"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/football_grade_b"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/basketball_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/football_grades">
+
+        <TextView
+            android:id="@+id/basketball_grade_tv"
+            style="@style/InputTagTV"
+            android:text="@string/basketball_grade"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/basketball_grade_a"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_a"
+            android:text="@string/option_a"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/basketball_grade_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/basketball_grade_b"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_b"
+            android:text="@string/option_b"
+            android:textColor="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/basketball_grade_a"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/basketball_grade_c"
+            style="@style/GradesOptionStyle"
+            android:background="@drawable/bg_grade_c"
+            android:text="@string/option_c"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/basketball_grade_b"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        style="@style/NegativeButtons"
+        android:layout_width="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketball_grades" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in_btn"
+        style="@style/ButtonsStyle"
+        android:layout_width="0dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton"
+        app:layout_constraintTop_toBottomOf="@+id/basketball_grades" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
