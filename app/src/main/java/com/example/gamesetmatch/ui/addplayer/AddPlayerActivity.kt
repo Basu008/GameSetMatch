@@ -64,6 +64,8 @@ class AddPlayerActivity : AppCompatActivity() {
         footballGradesLayout = addPlayerBottomSheet.findViewById(R.id.football_grades)
         basketballGradesLayout = addPlayerBottomSheet.findViewById(R.id.basketball_grades)
 
+
+
         closeBtn.setOnClickListener {
             addPlayerBottomSheetDialog.dismiss()
         }
